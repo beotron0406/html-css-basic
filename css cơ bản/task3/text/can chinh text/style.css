@@ -1,0 +1,12 @@
+p{
+    text-align: center ;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+h3{
+    vertical-align: middle;
+    font-style: italic;
+    text-decoration: line-through;
+    text-decoration: none;
+    color: blue;
+}

@@ -1,0 +1,279 @@
+.box1 {
+    width: 1500px;
+    height: 1000px;
+    background-color: yellow;
+    background-size: contain;
+    background-repeat: inherit;
+    background-attachment: scroll;
+    background: fixed url(mec.jpg);
+
+}
+
+.container {
+    overflow: hidden;
+}
+
+.box2 {
+    width: 600px;
+    height: 400px;
+    background-color: blue;
+    background-repeat: auto;
+    padding: 10px;
+    border: 2px yellow;
+    margin: 10px;
+}
+
+.box3 {
+    float: left;
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 10px;
+}
+
+.post-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+
+.post {
+    float: left;
+    width: 30%;
+    margin: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+
+.post h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+.post p {
+    font-size: 0.9em;
+    padding: 0 10px 10px;
+}
+
+/* thuộc tính flex, flex-direction row/column */
+.container-flex1 {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    border: 10px solid black;
+}
+
+.item {
+    flex: 1;
+    background-color: #f9f9f9;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* flex-wrap và justify-content */
+.container-flex2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 300px;
+    border: 5px solid black;
+}
+
+.item1 {
+    width: 80px;
+    height: 80px;
+    background-color: #f9f9f9;
+    margin: 10px;
+    text-align: center;
+    line-height: 80px;
+}
+
+/* thay đổi vị trí hiển thị order */
+.container-flex3 {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: #f9f9f9;
+}
+
+.item2 {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.xanh {
+    background-color: blue;
+    order: 2;
+}
+
+.do {
+    background-color: red;
+    order: 1;
+}
+
+.tim {
+    background-color: purple;
+    order: 4;
+}
+
+.vang {
+    background-color: yellow;
+    order: 3;
+}
+
+/* flex basis */
+.container-flex4 {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    background-color: #f9f9f9;
+}
+
+.item3 {
+    background-color: chocolate;
+    color: purple;
+    text-align: center;
+    line-height: 100px;
+    margin: 10px;
+}
+
+.phone {
+    flex-basis: 100px;
+}
+
+.ipad {
+    flex-basis: 200px;
+}
+
+.laptop {
+    flex-basis: auto;
+}
+
+/* flex grow */
+.container-flex5 {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    background-color: #f9f9f9;
+}
+
+.item4 {
+    background-color: chartreuse;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin: 10px;
+}
+
+.coc {
+    flex-grow: 1;
+}
+
+.chen {
+    flex-grow: 3;
+}
+
+.ly {
+    flex-grow: 1;
+}
+
+/* flex shrink */
+.container-flex6 {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    background-color: #f9f9f9;
+    align-items: center;
+}
+
+.item5 {
+    flex-basis: 150px;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin: 5px;
+}
+
+.car {
+    flex-shrink: 1;
+}
+
+.bike {
+    flex-shrink: 2;
+}
+
+.boat {
+    flex-shrink: 3;
+}
+
+/* thay đổi thuộc tính display trên đối tượng transform */
+.container-display {
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    background-color: #f9f9f9;
+    align-items: center;
+}
+
+.item6 {
+    background-color: #f449b8;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin: 5px;
+    overflow: auto;
+}
+
+.a {
+    transform: translate(10px, 20px);
+}
+
+/* điều chỉnh vị trí khối con trôi nổi trên khối cha(absolute) */
+.cha {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background-color: #f9f9f9;
+    margin: 10px;
+}
+
+.con {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    top: 50px;
+    right: 20px;
+}
+
+/* Cố định một khối trong layout(thường dung làm back top) */
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+#backToTop:hover {
+    background-color: #0056b3;
+}
+
