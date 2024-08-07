@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Khóa học online</title>
+  </head>
+  <body>
+    <header>
+        <nav>
+            <div class="logo">Suchine</div>
+            <div class="nav-center">
+            <select class="categories">
+                <option>Categories</option>
+                <option>Categories1</option>
+                <option>Categories2</option>
+                <option>Categories3</option>
+                <option>Categories4</option>
+            </select>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for anything">
+                <button type="submit">🔍</button>
+            </div>
+        </div>
+            <div class="nav__links">
+                <a href="#">Suchine Premium</a>
+                <a href="#">information</a>
+                <a href="#" class="cart-icon">giỏ hàng</a>
+                <a href="#" class="btn-signin">Sign in</a>
+                <a href="#" class="btn-signup">Sign up</a>
+                <a href="#" class="lang-icon"></a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="slide-container">
+
+      <!-- Full-width images with number text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+          <img src="study1.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+          <img src="study2.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+          <img src="study3.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+          <img src="study4.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+          <img src="study5.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+          <img src="study6.jpg" style="width:100%">
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <!-- Thumbnail images -->
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="study1.jpg" style="width:100%" onclick="currentSlide(1)" alt="study1">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="study2.jpg" style="width:100%" onclick="currentSlide(2)" alt="study2">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="study3.jpg" style="width:100%" onclick="currentSlide(3)" alt="study3">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="study4.jpg" style="width:100%" onclick="currentSlide(4)" alt="study4">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="study5.jpg" style="width:100%" onclick="currentSlide(5)" alt="study5">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="study6.jpg" style="width:100%" onclick="currentSlide(6)" alt="study6">
+        </div>
+      </div>
+    </div>
+
+        <section class="trusted-by">
+            <p>Trusted by over 15,000 companies and millions of learners around the world</p>
+        </section>
+    
+    <script src="script.js"></script>
+
+    </div>
+  </body>
+</html>

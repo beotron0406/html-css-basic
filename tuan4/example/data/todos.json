@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1722969029440,
+    "text": "dọn dẹp nhà cửa",
+    "completed": true
+  },
+  {
+    "id": 1722970500585,
+    "text": "lau nhà",
+    "completed": false
+  },
+  {
+    "id": 1722970503831,
+    "text": "quét nhà",
+    "completed": false
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "web-vitals": "^4.2.2"
+  },
+  "dependencies": {
+    "@atlaskit/button": "^19.0.0",
+    "@atlaskit/icon": "^22.7.0",
+    "@atlaskit/textfield": "^6.4.2",
+    "styled-components": "^6.1.12",
+    "uuid": "^10.0.0"
+  }
+}
