@@ -110,10 +110,10 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <ul className="flex justify-between items-center w-full overflow-x-auto">
             <Link href="/news">Thời sự</Link>
-            <Link href="/view">Góc nhìn</Link>
+            <Link href="/weather">Thời tiết</Link>
             <Link href="/world">Thế giới</Link>
             <Link href="/video">Video</Link>
-            <Link href="/business">Kinh doanh</Link>
+            <Link href="/finance">Tài chính</Link>
             <Link href="/property">Bất động sản</Link>
             <Link href="/science">Khoa học</Link>
             <Link href="/entertaiment">Giải trí</Link>

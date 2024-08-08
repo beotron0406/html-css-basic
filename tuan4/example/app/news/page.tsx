@@ -43,43 +43,47 @@ export default function news() {
           </p>
         </div>
         <section className="grid md:grid-cols-2 gap-8">
-          {[
-            {
-              src: "/lam1_accident.jpg",
-              alt: "lam1_accident",
-              title: "3 siêu xe bị tạm giữ",
-              content:
-                "Các ôtô có giá khoảng 4-16 tỷ đồng mỗi chiếc, không gắn đủ biển số, tài xế không có bằng lái, không giấy đăng ký xe... bị cảnh sát bắt giữ.",
-            },
-            {
-              src: "/duaxe.jpg",
-              alt: "duaxe",
-              title:
-                "Hai tài xế xe buýt rượt đuổi, giành khách trên quốc lộ bị tạm giữ",
-              content:
-                "Hai người lái xe buýt rượt đuổi nhau trên quốc lộ 1, đánh võng không cho phương tiện khác vượt lên... để tranh giành khách, bị cảnh sát tạm giữ.",
-            },
-          ].map((item, index) => (
-            <div key={index} className="flex flex-col h-full">
-              <div className="relative w-full h-0 pb-[56.25%] mb-4">
-                <Image
-                  src={item.src}
-                  alt={item.alt}
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg absolute top-0 left-0 w-full h-full"
-                />
-              </div>
-              <div className="flex-grow">
-                <h2 className="text-xl font-bold mb-2">
-                  <Link href="#" className="text-blue-500">
-                    {item.title}
-                  </Link>
-                </h2>
-                <p className="line-clamp-3">{item.content}</p>
-              </div>
-            </div>
-          ))}
+            {[
+                {
+                    src: "/lam1_accident.jpg",
+                    alt: "lam1_accident",
+                    title: "3 siêu xe bị tạm giữ",
+                    content:
+                        "Các ôtô có giá khoảng 4-16 tỷ đồng mỗi chiếc, không gắn đủ biển số, tài xế không có bằng lái, không giấy đăng ký xe... bị cảnh sát bắt giữ.",
+                    link: "/accident",
+                },
+                {
+                    src: "/duaxe.jpg",
+                    alt: "duaxe",
+                    title:
+                        "Hai tài xế xe buýt rượt đuổi, giành khách trên quốc lộ bị tạm giữ",
+                    content:
+                        "Hai người lái xe buýt rượt đuổi nhau trên quốc lộ 1, đánh võng không cho phương tiện khác vượt lên... để tranh giành khách, bị cảnh sát tạm giữ.",
+                    link: "/racing", 
+                },
+            ].map((item, index) => (
+                <div key={index} className="flex flex-col h-full">
+                    <div className="relative w-full h-0 pb-[56.25%] mb-4">
+                        <Image
+                            src={item.src}
+                            alt={item.alt}
+                            layout="fill"
+                            objectFit="cover"
+                            className="rounded-lg absolute top-0 left-0 w-full h-full"
+                        />
+                    </div>
+                    <div className="flex-grow">
+                        <h2 className="text-xl font-bold mb-2">
+                            <Link href={item.link}>
+                                <span className="text-blue-500 cursor-pointer">
+                                    {item.title}
+                                </span>
+                            </Link>
+                        </h2>
+                        <p className="line-clamp-3">{item.content}</p>
+                    </div>
+                </div>
+            ))}
         </section>
       </main>
       </>
