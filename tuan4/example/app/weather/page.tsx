@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React, { useState } from 'react';
 import './WeatherPage.css';
 
@@ -17,6 +17,7 @@ const Weather: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
 
   const apiKey = "062d92a2646152d39eb7845a608226cb";
+
   const fetchWeather = async (city: string) => {
     setLoading(true);
     setError(null);
@@ -39,7 +40,10 @@ const Weather: React.FC = () => {
   };
 
   const handleSearch = () => {
-    if (city.trim()) {
+    if (!city.trim()) {
+      setError('Vui lòng nhập tên địa điểm!');
+      setWeatherData(null); // Xóa dữ liệu cũ (nếu có) khi có lỗi nhập liệu
+    } else {
       fetchWeather(city);
     }
   };
@@ -62,7 +66,7 @@ const Weather: React.FC = () => {
       {loading ? (
         <div>Đang tải...</div>
       ) : error ? (
-        <div>{error}</div>
+        <div style={{ color: 'red' }}>{error}</div>
       ) : (
         weatherData && (
           <div className="weather">

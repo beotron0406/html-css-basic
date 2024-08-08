@@ -10,11 +10,13 @@ const Navbar = () => {
 
   useEffect(() => {
     const userId = localStorage.getItem("userId");
+
     setIsLoggedIn(!!userId);
   }, []);
 
   const handleLogout = () => {
     localStorage.removeItem("userId");
+
     setIsLoggedIn(false);
     router.push("/login");
   };
@@ -83,7 +85,7 @@ const Navbar = () => {
               />
               <button
                 onClick={handleLogout}
-                className="p-2 bg-red-500 text-white rounded"
+                className="p-2 bg-red-500 text-white rounded ml-4"
               >
                 Logout
               </button>
@@ -111,12 +113,7 @@ const Navbar = () => {
           <ul className="flex justify-between items-center w-full overflow-x-auto">
             <Link href="/news">Thời sự</Link>
             <Link href="/weather">Thời tiết</Link>
-            <Link href="/world">Thế giới</Link>
-            <Link href="/video">Video</Link>
             <Link href="/finance">Tài chính</Link>
-            <Link href="/property">Bất động sản</Link>
-            <Link href="/science">Khoa học</Link>
-            <Link href="/entertaiment">Giải trí</Link>
             <Link href="/todoapp">Todoapp</Link>
           </ul>
           <button className="md:hidden">&#9776;</button>

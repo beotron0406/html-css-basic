@@ -23,9 +23,10 @@ export default function LoginPage() {
 
       if (response.ok) {
         const data = await response.json();
-       
         localStorage.setItem("userId", data.userId);
-        router.push("/");
+
+        // Reload lại trang và sau đó điều hướng về trang chủ
+        window.location.href = "/"; // Điều này sẽ reload lại trang và chuyển đến trang chủ
       } else {
         const data = await response.json();
         setError(data.error || "Login failed");
@@ -82,9 +83,6 @@ export default function LoginPage() {
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="submit"
             >
-              {error && (
-                <p className="text-red-500 text-xs italic mb-4">{error}</p>
-              )}
               Sign In
             </button>
             <Link
@@ -94,6 +92,7 @@ export default function LoginPage() {
               Sign Up
             </Link>
           </div>
+          {error && <p className="text-red-500 text-xs italic mt-4">{error}</p>}
         </form>
       </div>
     </div>
