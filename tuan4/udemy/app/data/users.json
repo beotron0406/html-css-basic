@@ -1,0 +1,20 @@
+[
+  {
+    "email": "sunshine04050603@gmail.com",
+    "password": "Hieu2003",
+    "phone": "1122334455",
+    "role": "admin"
+  },
+  {
+    "email": "sunshine040603@gmail.com",
+    "password": "Hieu2003",
+    "phone": "0987654321",
+    "role": "user"
+  },
+  {
+    "email": "sunshine0406203@gmail.com",
+    "password": "Hieu2003",
+    "phone": "1122334455",
+    "role": "user"
+  }
+]

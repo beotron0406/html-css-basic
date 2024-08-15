@@ -1,0 +1,52 @@
+{
+  "websiteInfos": [
+    {
+      "id": "1",
+      "title": "khóa 1",
+      "description": "khóa 1",
+      "contactEmail": "khoa1@gmail.com"
+    },
+    {
+      "id": "2",
+      "title": "khoa 2",
+      "description": "khoa 2 ",
+      "contactEmail": "khoa2@gmail.com"
+    },
+    {
+      "id": "3",
+      "title": "khoa 3",
+      "description": "khoa 3",
+      "contactEmail": "khoa3@gmail.com"
+    },
+    {
+      "id": "4",
+      "title": "khoa 4",
+      "description": "khoa 4",
+      "contactEmail": "khoa4@gmail.com"
+    },
+    {
+      "id": "5",
+      "title": "khoa 5 ",
+      "description": "khoa 5 ",
+      "contactEmail": "khoa5@gmail.com"
+    },
+    {
+      "id": "6",
+      "title": "khoa 6",
+      "description": "khoa 6 ",
+      "contactEmail": "khoa6@gmail.com"
+    },
+    {
+      "id": "7",
+      "title": "khoa7",
+      "description": "khoa7",
+      "contactEmail": "khoa7@gmail.com"
+    },
+    {
+      "id": "8",
+      "title": "khoa 8 ",
+      "description": "khoa 8",
+      "contactEmail": "khoa8@gmail.com"
+    }
+  ]
+}

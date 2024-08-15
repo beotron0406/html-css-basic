@@ -8,6 +8,7 @@
     "@atlaskit/icon": "^22.7.0",
     "@atlaskit/textfield": "^6.4.2",
     "styled-components": "^6.1.12",
+    "tailwindcss": "^3.4.9",
     "uuid": "^10.0.0"
   }
 }
